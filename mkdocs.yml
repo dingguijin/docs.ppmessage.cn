@@ -1,0 +1,17 @@
+site_name: docs.ppmessage.cn
+
+theme:
+  name: material
+
+nav:
+    - PPMessage:
+      - PPMessage 简介: ppmessage/what-is-ppmessage.md
+      - PPMessage 产品: ppmessage/ppmessage-production-introduction.md
+      - PPMessage 安装: ppmessage/ppmessage-installation.md
+      - PPMessage 配置: ppmessage/ppmessage-configuration.md
+      - PPMessage 操作: ppmessage/ppmessage-operation.md
+      
+    - ERP: erp.md
+    - CallCenter: callcenter.md
+    - IP PBX: ippbx.md
+

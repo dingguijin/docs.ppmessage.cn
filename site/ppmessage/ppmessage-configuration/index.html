@@ -1,0 +1,800 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>PPMessage 配置 - docs.ppmessage.cn</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ppmessage" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="docs.ppmessage.cn" class="md-header__button md-logo" aria-label="docs.ppmessage.cn" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            docs.ppmessage.cn
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              PPMessage 配置
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="docs.ppmessage.cn" class="md-nav__button md-logo" aria-label="docs.ppmessage.cn" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    docs.ppmessage.cn
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          PPMessage
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="PPMessage" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          PPMessage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../what-is-ppmessage/" class="md-nav__link">
+        PPMessage 简介
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ppmessage-production-introduction/" class="md-nav__link">
+        PPMessage 产品
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ppmessage-installation/" class="md-nav__link">
+        PPMessage 安装
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          PPMessage 配置
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        PPMessage 配置
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ppmessage_1" class="md-nav__link">
+    自定义 PPMessage 聊天组件
+  </a>
+  
+    <nav class="md-nav" aria-label="自定义 PPMessage 聊天组件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    设置聊天组件颜色
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    设置聊天组件上显示的团队信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    聊天组件高级定制方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    打开、关闭聊天窗口
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    配置客服团队
+  </a>
+  
+    <nav class="md-nav" aria-label="配置客服团队">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    管理座席人员
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    管理座席组织
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    配置客户信息
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    设置通过微信接收离线消息
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ppmessage-operation/" class="md-nav__link">
+        PPMessage 操作
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../erp.md" class="md-nav__link">
+        ERP
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callcenter.md" class="md-nav__link">
+        CallCenter
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ippbx.md" class="md-nav__link">
+        IP PBX
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ppmessage_1" class="md-nav__link">
+    自定义 PPMessage 聊天组件
+  </a>
+  
+    <nav class="md-nav" aria-label="自定义 PPMessage 聊天组件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    设置聊天组件颜色
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    设置聊天组件上显示的团队信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    聊天组件高级定制方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    打开、关闭聊天窗口
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    配置客服团队
+  </a>
+  
+    <nav class="md-nav" aria-label="配置客服团队">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    管理座席人员
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    管理座席组织
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    配置客户信息
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    设置通过微信接收离线消息
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="ppmessage">PPMessage 配置指南</h1>
+<blockquote>
+<p>以下介绍如何在网站或应用里配置 PPMessage。</p>
+</blockquote>
+<h2 id="ppmessage_1">自定义 PPMessage 聊天组件</h2>
+<p>可以轻松自定义PPMessage 聊天组件，使其与您的产品或网站浑然一体。在自定义过程中，您可以访问“设置-开发者设置-网络聊天链接”查看设置是否满足您的需要。</p>
+<h3 id="_1">设置聊天组件颜色</h3>
+<p>访问 “设置-开发者设置-网页聊天插件”，选择合适的颜色后，点击下图箭头所示“select”按钮，您网站的聊天按钮和组件窗口颜色将变成所选的颜色.</p>
+<h3 id="_2">设置聊天组件上显示的团队信息</h3>
+<p>通过更改后台的团队设置信息，您可以控制聊天组件上向您的访客展示的团队名称和默认欢迎语。 访问 “设置-团队设置-团队设置”。点击修改团队设置界面的“公司简称”和“默认欢迎语”，聊天组件上对应的展示信息就会发生相应的变化。</p>
+<h3 id="_3">聊天组件高级定制方法</h3>
+<p>通过编辑‘网页聊天插件’的‘网站插件代码’可以实现对 PPMessage 聊天图标和聊天对话窗口的更多控制。您需要将编辑后的网页插件代码粘贴到您的网站页面与标签之间。</p>
+<p>让我们把插件代码的格式变的好看些:</p>
+<pre><code>&lt;script&gt; 
+window.ppSettings = {
+  app_uuid:'a600998e-efff-11e5-9d9f-02287b8c0ebf'
+};
+(function(){
+  var w=window,d=document;
+  function l() {
+    var a=d.createElement('script');
+    a.type='text/javascript';
+    a.async=!0;
+    a.charset='utf-8';
+    a.src='https://ppmessage.cn/ppcom/assets/pp-library.min.js';
+    var b=d.getElementsByTagName('script')[0];
+    b.parentNode.insertBefore(a,b)
+  }
+  l();
+})();
+&lt;/script&gt;
+</code></pre>
+<p>改变聊天按钮的位置
+默认情况下聊天按钮的位置在整个网页的右下角，改变聊天按钮的位置需要在 ppSettings 中增加一些控制信息:</p>
+<pre><code>&lt;script&gt; 
+window.ppSettings = {
+  app_uuid:'a600998e-efff-11e5-9d9f-02287b8c0ebf',
+  view: {
+    launcher_is_show: true,
+    launcher_bottom_margin: '20px',
+    launcher_right_margin: '30px',
+    launch_style: {
+      mode: 'normal',
+      position:'right',
+      bottom: 95
+    }
+  }
+};
+(function(){
+  var w=window,d=document;
+  function l() {
+    var a=d.createElement('script');
+    a.type='text/javascript';
+    a.async=!0;
+    a.charset='utf-8';
+    a.src='https://ppmessage.cn/ppcom/assets/pp-library.min.js';
+    var b=d.getElementsByTagName('script')[0];
+    b.parentNode.insertBefore(a,b)
+  }
+  l();
+})();
+&lt;/script&gt;
+</code></pre>
+<p>这些控制信息都是默认值，就是说不控制就是这样的。 其中 <code>launcher_bottom_margin</code> 和 <code>launcher_right_margin</code> 是用来控制聊天按钮距离浏览器窗口右边和底边的距离，更改这个大小，看看效果吧。</p>
+<p>不过仅仅改这个聊天图标的位置是不够的，PPMessage 还没有那么智能，点击聊天图标后，聊天对话窗口还是从默认的右下窗口弹出，这个效果可能不是你想要的，这时候需要继续更改窗口位置。</p>
+<p>改变聊天窗口的位置
+还是刚才的代码，控制聊天窗口位置的是 <code>view.launch_style.position/bottom</code>，分别表示聊天窗口是在浏览器的左侧还是右侧，以及距离浏览器的底边高度。如果应用自定义的 <code>lauch_style</code>，需要将 <code>lauch_style.mode</code> 指定为 <code>custom</code>。应用了自定义的风格，聊天对话的窗口弹出动画方式自动改变。<code>position</code> 可以取的值有 <code>left/right/center</code>； 如果 <code>position</code> 为 <code>right</code> 那么聊天窗口将从浏览器的右侧滑出，如果是 <code>center</code>，那么聊天窗口将从页面中间淡出，并且居于页面中间。</p>
+<pre><code>window.ppSettings = {
+  app_uuid:'a600998e-efff-11e5-9d9f-02287b8c0ebf',
+  view: {
+    launcher_bottom_margin: '200px',
+    launcher_right_margin: '30px',
+    launcher_is_show: true,
+    launch_style: {
+      mode: 'custom',
+      position:'right',
+      bottom: 295
+    }
+  }
+};
+(function(){
+  var w=window,d=document;
+  function l() {
+    var a=d.createElement('script');
+    a.type='text/javascript';
+    a.async=!0;
+    a.charset='utf-8';
+    a.src='https://ppmessage.cn/ppcom/assets/pp-library.min.js';
+    var b=d.getElementsByTagName('script')[0];
+    b.parentNode.insertBefore(a,b)
+  }
+  l();
+})();
+</code></pre>
+<p>自己尝试实验一下吧。</p>
+<p>还有一个你想改变的，就是改变聊天按钮的图标。</p>
+<p>隐藏聊天按钮的图标
+隐藏聊天按钮的图标需要一个新的变量，<code>launcher_is_show</code>，赋予它 <code>true</code> 或者 <code>false</code>，即可控制显示聊天按钮或者隐藏聊天按钮，<code>true</code> 就是显示，<code>false</code> 就是隐藏。</p>
+<pre><code>window.ppSettings = {
+  app_uuid:'a600998e-efff-11e5-9d9f-02287b8c0ebf',
+  view: {
+    launcher_bottom_margin: '200px',
+    launcher_right_margin: '30px',
+    launcher_is_show: false,
+    launch_style: {
+      mode: 'custom',
+      position:'right',
+      bottom: 295
+    }
+  }
+};
+(function(){
+  var w=window,d=document;
+  function l() {
+    var a=d.createElement('script');
+    a.type='text/javascript';
+    a.async=!0;
+    a.charset='utf-8';
+    a.src='https://ppmessage.cn/ppcom/assets/pp-library.min.js';
+    var b=d.getElementsByTagName('script')[0];
+    b.parentNode.insertBefore(a,b)
+  }
+  l();
+})();
+</code></pre>
+<p>值得注意的是 <code>launcher_is_show</code> 不是必须与 <code>custom mode</code> 一起使用。</p>
+<p>下面你一定需要打开关闭聊天窗口的接口了，因为聊天按钮已经被隐藏了，本来打开和关闭聊天窗口是它来完成的。</p>
+<h3 id="_4">打开、关闭聊天窗口</h3>
+<p>您可是在网页的其他位置使用 Javascript 调用 <code>PP.show()</code> 去打开聊天窗口，<code>PP.hide()</code> 去关闭聊天窗口，唯一需要注意的是一定要在 <code>PP</code> 对象已经存在的情况下使用。</p>
+<p>开发者可以在处理指定元素的 <code>click、hover</code> 等事件的时机来调用 <code>PP.show()</code> 或者 <code>PP.hide()</code>。如果想了解 PPMessage 的聊天窗口的打开状态可以用 <code>PP.isOpen()</code> 来检查，如果正在使用类似 <code>angularjs</code> 这样的前端框架，可以用 <code>ng-if</code> 来绑定不同的界面操作按钮。 开发者也可以通过<code>PP</code> 对象的 <code>onHide</code> 和 <code>onShow</code> 来响应聊天窗口打开和关闭的事件，通过回调函数来控制自己的界面显示:</p>
+<pre><code>
+PP.onHide(function() {
+});
+
+
+PP.onShow(function() {
+})
+</code></pre>
+<h2 id="_5">配置客服团队</h2>
+<p>缺省情况下，PPMessage 将所有座席人员视为一个大的工作组。访客咨询消息不需要排队，立刻接入系统，座席人员都可以看到新进入的消息，也能看到是否有其他团队成员正在处理，这种模式的接待能力远远高于目前市面上需要消息排队的同类产品。您也可以根据业务需求，将客服分成多个工作组，并将消息在工作组间分配。创建客服团队，首先需要添加座席人员。</p>
+<h3 id="_6">管理座席人员</h3>
+<p>访问 “设置-团队设置-座席人员”,点击“添加”按钮，您就可以依次添加座席人员了。</p>
+<p>需要注意的是，PPMessage 通过邮件地址标识新增座席人员，请务必为新增座席人员设置真实的邮件地址。否则新增座席人员密码丢失将无法找回。 座席人员添加完成后，您可以为他们建立不同的组织。</p>
+<h3 id="_7">管理座席组织</h3>
+<p>座席组织是管理您的客服人员在 PPMessage 中一起工作的好办法。您可以将对话分配给一个座席组织，而不是单个座席人员。每个座席组织的成员都可以轻松查看和管理分配给该组织的对话。</p>
+<p>访问“设置-团队设置-座席组织”，点击“添加”按钮可以创建新的客服组。</p>
+<p>点击新添加的座席组织图标后，单击右边栏“成员”项左侧的箭头图标，出现“+” 和“-”按钮，点击“+”按钮，就可以为新的座席组织添加成员了。</p>
+<h3 id="_8">配置客户信息</h3>
+<p>在 PPMessage 中可以查看，过滤，搜索和细分客户，可以让您轻松了解每个访客并可以统计分析不同访客群体的行为特征。您可以根据您的业务需要，在 PPMessage 设置特定于您的用户群的自定义用户属性和用户事件。您可以在与客户聊天时记录这些自定义用户属性，也可以通过 Javascript 代码将这些信息推送给 PPMessage。这些属性将和 PPMessage 的标准字段一起出现在 PPMessage 访客界面的过滤条件列表里，您可以利用这些属性进行客户细分。</p>
+<h2 id="_9">设置通过微信接收离线消息</h2>
+<p>如果您希望在离线的情况下仍可以接收访客消息并进行回复，您需要使用坐席服务人员的微信去关注 PPMessage 的公众号。然后将坐席服务人员的微信和 PPMessage 系统中的坐席服务人员账号密码绑定。</p>
+<p>点击绑定座席，输入坐席服务人员在 PPMessage 的注册邮箱和密码，微信提示座席绑定成功后，您就可以通过微信接收和回复访客消息了。</p>
+<p>这样即使您的坐席服务人员没有登录 PPMessage 的后台系统，访客发送的消息会自动通过 PPMessage 公众号推送到您的坐席服务人员的微信上。</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../ppmessage-installation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: PPMessage 安装" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              PPMessage 安装
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../ppmessage-operation/" class="md-footer__link md-footer__link--next" aria-label="Next: PPMessage 操作" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              PPMessage 操作
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>
